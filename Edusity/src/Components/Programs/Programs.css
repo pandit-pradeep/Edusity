@@ -1,23 +1,25 @@
-.programs{
+.programs {
     margin: 80px auto;
     width: 90%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
+    /* position: relative; */
 }
 
-.programs img {
+.program img {
     width: 100%;
     border-radius: 10px;
     display: block;
 }
 
-.programs {
+.program {
     flex-basis: 31%;
+    position: relative;
+
 }
 
-.caption{
+.caption {
     border-radius: 10px;
     position: absolute;
     top: 0;
@@ -32,12 +34,16 @@
     color: #fff;
     cursor: pointer;
     opacity: 0;
+    padding-top: 70%;
+    transition: 0.4s;
 }
 
 .caption img {
     width: 60px;
     margin-bottom: 10px;
 }
-.program:hover .caption{
+
+.program:hover .caption {
     opacity: 1;
+    padding-top: 0;
 }
